@@ -1,0 +1,4 @@
+baseURL = 'http://damido31.github.io/loomfactory/'
+languageCode = 'zh-cn'
+title = '织织布机机'
+theme = "papermod"
