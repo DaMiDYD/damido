@@ -1,4 +1,5 @@
-baseURL = 'http://damido31.github.io/loomfactory/'
+baseURL = 'https://damido31.github.io/loomfactory/'
 languageCode = 'zh-cn'
-title = '织织布机机'
+title = 'loomfactory'
 theme = "papermod"
+publishDir = 'docs'
