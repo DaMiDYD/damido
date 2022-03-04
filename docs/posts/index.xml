@@ -6,14 +6,25 @@
     <description>Recent content in Posts on loomfactory</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Mon, 28 Feb 2022 15:56:01 +0800</lastBuildDate><atom:link href="https://damido31.github.io/loomfactory/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 01 Mar 2022 19:27:11 +0800</lastBuildDate><atom:link href="https://damido31.github.io/loomfactory/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Helloworld</title>
-      <link>https://damido31.github.io/loomfactory/posts/helloworld/</link>
-      <pubDate>Mon, 28 Feb 2022 15:56:01 +0800</pubDate>
+      <title>《写给理工科人看的乐理》笔记</title>
+      <link>https://damido31.github.io/loomfactory/posts/musictheory/</link>
+      <pubDate>Tue, 01 Mar 2022 19:27:11 +0800</pubDate>
       
-      <guid>https://damido31.github.io/loomfactory/posts/helloworld/</guid>
-      <description>This is where it all begins. </description>
+      <guid>https://damido31.github.io/loomfactory/posts/musictheory/</guid>
+      <description>本篇为知乎上写给理工科人看的乐理（作者：Devymex Wang）的学习笔记。
+声学基础 音乐 声音以某种规律进行音高（频率）和音量（振幅）的变化。
+纯音  以某个固定频率简谐振动产生的声波称为纯音。 自然界不存在绝对的纯音。电声设备或音叉可以发出接近纯音的声波。  复合音  谐波叠加    对于一组频率成倍数的正弦波来说，频率最低的波称为基波，其余波为谐波，根据频率倍数细分为二次谐波、三次谐波等。音乐中谐波往往被称为泛音。
+  基波与谐波叠加而成的音波称为单音，特指单一乐器演奏独立的一个音发出的声波。该声波的频率称为音高，而又因为谐波叠加后的波频为基波波频，所以基波的频率即为音高。
+  每种乐器构造的特殊性使得组成一个单音的各谐波的振幅之比不同。此外，乐器本身也会产生共振。所以，不同乐器即使奏出相同音高，音色也会迥然不同。
+  直观听觉演示见好和弦Ep.46。
+  拍音    振幅相近的两个单音相互叠加产生的声波，因其周期性的振幅变化如节拍一般，故称为拍音。
+  如果两个单音频率为整数，则拍音频率为其周期最小公倍数的倒数。
+  十二平均律与五线谱 为了记录和表达不同的音高，人们发展出表示相对音高的十二平均律和表示绝对音高的五线谱系统。
+十二平均律   为了表示相对音高，引入音程的概念，即两个音之间的频率差距。
+  将频率比为1 : 2的两个音（如中央Do和高音Do）之间的音程定义为纯八度。 把纯八度音程按频率十二等分，即得到频率呈等比增长的十三个音。为了便于表示，将相邻音之间的音程记为0.5个音数，并对不同的音数所对应的音程名分别做了定义，如下表：
+     音数 音程 音数 音程     0.5 小二度 3.5 纯五度   1 大二度 4 小六度   1.</description>
     </item>
     
   </channel>

@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto">
+
+<head><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="index, follow">
+<title>《写给理工科人看的乐理》笔记 | loomfactory</title>
+<meta name="keywords" content="" />
+<meta name="description" content="本篇为知乎上写给理工科人看的乐理（作者：Devymex Wang）的学习笔记。
+声学基础 音乐 声音以某种规律进行音高（频率）和音量（振幅）的变化。
+纯音  以某个固定频率简谐振动产生的声波称为纯音。 自然界不存在绝对的纯音。电声设备或音叉可以发出接近纯音的声波。  复合音  谐波叠加    对于一组频率成倍数的正弦波来说，频率最低的波称为基波，其余波为谐波，根据频率倍数细分为二次谐波、三次谐波等。音乐中谐波往往被称为泛音。
+  基波与谐波叠加而成的音波称为单音，特指单一乐器演奏独立的一个音发出的声波。该声波的频率称为音高，而又因为谐波叠加后的波频为基波波频，所以基波的频率即为音高。
+  每种乐器构造的特殊性使得组成一个单音的各谐波的振幅之比不同。此外，乐器本身也会产生共振。所以，不同乐器即使奏出相同音高，音色也会迥然不同。
+  直观听觉演示见好和弦Ep.46。
+  拍音    振幅相近的两个单音相互叠加产生的声波，因其周期性的振幅变化如节拍一般，故称为拍音。
+  如果两个单音频率为整数，则拍音频率为其周期最小公倍数的倒数。
+  十二平均律与五线谱 为了记录和表达不同的音高，人们发展出表示相对音高的十二平均律和表示绝对音高的五线谱系统。
+十二平均律   为了表示相对音高，引入音程的概念，即两个音之间的频率差距。
+  将频率比为1 : 2的两个音（如中央Do和高音Do）之间的音程定义为纯八度。 把纯八度音程按频率十二等分，即得到频率呈等比增长的十三个音。为了便于表示，将相邻音之间的音程记为0.5个音数，并对不同的音数所对应的音程名分别做了定义，如下表：
+     音数 音程 音数 音程     0.5 小二度 3.5 纯五度   1 大二度 4 小六度   1.">
+<meta name="author" content="">
+<link rel="canonical" href="https://damido31.github.io/loomfactory/posts/musictheory/" />
+<link crossorigin="anonymous" href="/loomfactory/assets/css/stylesheet.min.c88963fe2d79462000fd0fb1b3737783c32855d340583e4523343f8735c787f0.css" integrity="sha256-yIlj/i15RiAA/Q&#43;xs3N3g8MoVdNAWD5FIzQ/hzXHh/A=" rel="preload stylesheet" as="style">
+<script defer crossorigin="anonymous" src="/loomfactory/assets/js/highlight.min.7680afc38aa6b15ddf158a4f3780b7b1f7dde7e91d26f073e6229bb7a0793c92.js" integrity="sha256-doCvw4qmsV3fFYpPN4C3sffd5&#43;kdJvBz5iKbt6B5PJI="
+    onload="hljs.initHighlightingOnLoad();"></script>
+<link rel="icon" href="https://damido31.github.io/loomfactory/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="https://damido31.github.io/loomfactory/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://damido31.github.io/loomfactory/favicon-32x32.png">
+<link rel="apple-touch-icon" href="https://damido31.github.io/loomfactory/apple-touch-icon.png">
+<link rel="mask-icon" href="https://damido31.github.io/loomfactory/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --hljs-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-track {
+                background: 0 0;
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-thumb {
+                border-color: var(--theme);
+            }
+        }
+
+    </style>
+</noscript><meta property="og:title" content="《写给理工科人看的乐理》笔记" />
+<meta property="og:description" content="本篇为知乎上写给理工科人看的乐理（作者：Devymex Wang）的学习笔记。
+声学基础 音乐 声音以某种规律进行音高（频率）和音量（振幅）的变化。
+纯音  以某个固定频率简谐振动产生的声波称为纯音。 自然界不存在绝对的纯音。电声设备或音叉可以发出接近纯音的声波。  复合音  谐波叠加    对于一组频率成倍数的正弦波来说，频率最低的波称为基波，其余波为谐波，根据频率倍数细分为二次谐波、三次谐波等。音乐中谐波往往被称为泛音。
+  基波与谐波叠加而成的音波称为单音，特指单一乐器演奏独立的一个音发出的声波。该声波的频率称为音高，而又因为谐波叠加后的波频为基波波频，所以基波的频率即为音高。
+  每种乐器构造的特殊性使得组成一个单音的各谐波的振幅之比不同。此外，乐器本身也会产生共振。所以，不同乐器即使奏出相同音高，音色也会迥然不同。
+  直观听觉演示见好和弦Ep.46。
+  拍音    振幅相近的两个单音相互叠加产生的声波，因其周期性的振幅变化如节拍一般，故称为拍音。
+  如果两个单音频率为整数，则拍音频率为其周期最小公倍数的倒数。
+  十二平均律与五线谱 为了记录和表达不同的音高，人们发展出表示相对音高的十二平均律和表示绝对音高的五线谱系统。
+十二平均律   为了表示相对音高，引入音程的概念，即两个音之间的频率差距。
+  将频率比为1 : 2的两个音（如中央Do和高音Do）之间的音程定义为纯八度。 把纯八度音程按频率十二等分，即得到频率呈等比增长的十三个音。为了便于表示，将相邻音之间的音程记为0.5个音数，并对不同的音数所对应的音程名分别做了定义，如下表：
+     音数 音程 音数 音程     0.5 小二度 3.5 纯五度   1 大二度 4 小六度   1." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://damido31.github.io/loomfactory/posts/musictheory/" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2022-03-01T19:27:11&#43;08:00" />
+<meta property="article:modified_time" content="2022-03-01T19:27:11&#43;08:00" />
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="《写给理工科人看的乐理》笔记"/>
+<meta name="twitter:description" content="本篇为知乎上写给理工科人看的乐理（作者：Devymex Wang）的学习笔记。
+声学基础 音乐 声音以某种规律进行音高（频率）和音量（振幅）的变化。
+纯音  以某个固定频率简谐振动产生的声波称为纯音。 自然界不存在绝对的纯音。电声设备或音叉可以发出接近纯音的声波。  复合音  谐波叠加    对于一组频率成倍数的正弦波来说，频率最低的波称为基波，其余波为谐波，根据频率倍数细分为二次谐波、三次谐波等。音乐中谐波往往被称为泛音。
+  基波与谐波叠加而成的音波称为单音，特指单一乐器演奏独立的一个音发出的声波。该声波的频率称为音高，而又因为谐波叠加后的波频为基波波频，所以基波的频率即为音高。
+  每种乐器构造的特殊性使得组成一个单音的各谐波的振幅之比不同。此外，乐器本身也会产生共振。所以，不同乐器即使奏出相同音高，音色也会迥然不同。
+  直观听觉演示见好和弦Ep.46。
+  拍音    振幅相近的两个单音相互叠加产生的声波，因其周期性的振幅变化如节拍一般，故称为拍音。
+  如果两个单音频率为整数，则拍音频率为其周期最小公倍数的倒数。
+  十二平均律与五线谱 为了记录和表达不同的音高，人们发展出表示相对音高的十二平均律和表示绝对音高的五线谱系统。
+十二平均律   为了表示相对音高，引入音程的概念，即两个音之间的频率差距。
+  将频率比为1 : 2的两个音（如中央Do和高音Do）之间的音程定义为纯八度。 把纯八度音程按频率十二等分，即得到频率呈等比增长的十三个音。为了便于表示，将相邻音之间的音程记为0.5个音数，并对不同的音数所对应的音程名分别做了定义，如下表：
+     音数 音程 音数 音程     0.5 小二度 3.5 纯五度   1 大二度 4 小六度   1."/>
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position":  1 ,
+      "name": "Posts",
+      "item": "https://damido31.github.io/loomfactory/posts/"
+    }, 
+    {
+      "@type": "ListItem",
+      "position":  2 ,
+      "name": "《写给理工科人看的乐理》笔记",
+      "item": "https://damido31.github.io/loomfactory/posts/musictheory/"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "《写给理工科人看的乐理》笔记",
+  "name": "《写给理工科人看的乐理》笔记",
+  "description": "本篇为知乎上写给理工科人看的乐理（作者：Devymex Wang）的学习笔记。\n声学基础 音乐 声音以某种规律进行音高（频率）和音量（振幅）的变化。\n纯音  以某个固定频率简谐振动产生的声波称为纯音。 自然界不存在绝对的纯音。电声设备或音叉可以发出接近纯音的声波。  复合音  谐波叠加    对于一组频率成倍数的正弦波来说，频率最低的波称为基波，其余波为谐波，根据频率倍数细分为二次谐波、三次谐波等。音乐中谐波往往被称为泛音。\n  基波与谐波叠加而成的音波称为单音，特指单一乐器演奏独立的一个音发出的声波。该声波的频率称为音高，而又因为谐波叠加后的波频为基波波频，所以基波的频率即为音高。\n  每种乐器构造的特殊性使得组成一个单音的各谐波的振幅之比不同。此外，乐器本身也会产生共振。所以，不同乐器即使奏出相同音高，音色也会迥然不同。\n  直观听觉演示见好和弦Ep.46。\n  拍音    振幅相近的两个单音相互叠加产生的声波，因其周期性的振幅变化如节拍一般，故称为拍音。\n  如果两个单音频率为整数，则拍音频率为其周期最小公倍数的倒数。\n  十二平均律与五线谱 为了记录和表达不同的音高，人们发展出表示相对音高的十二平均律和表示绝对音高的五线谱系统。\n十二平均律   为了表示相对音高，引入音程的概念，即两个音之间的频率差距。\n  将频率比为1 : 2的两个音（如中央Do和高音Do）之间的音程定义为纯八度。 把纯八度音程按频率十二等分，即得到频率呈等比增长的十三个音。为了便于表示，将相邻音之间的音程记为0.5个音数，并对不同的音数所对应的音程名分别做了定义，如下表：\n     音数 音程 音数 音程     0.5 小二度 3.5 纯五度   1 大二度 4 小六度   1.",
+  "keywords": [
+    
+  ],
+  "articleBody": "本篇为知乎上写给理工科人看的乐理（作者：Devymex Wang）的学习笔记。\n声学基础 音乐 声音以某种规律进行音高（频率）和音量（振幅）的变化。\n纯音  以某个固定频率简谐振动产生的声波称为纯音。 自然界不存在绝对的纯音。电声设备或音叉可以发出接近纯音的声波。  复合音  谐波叠加    对于一组频率成倍数的正弦波来说，频率最低的波称为基波，其余波为谐波，根据频率倍数细分为二次谐波、三次谐波等。音乐中谐波往往被称为泛音。\n  基波与谐波叠加而成的音波称为单音，特指单一乐器演奏独立的一个音发出的声波。该声波的频率称为音高，而又因为谐波叠加后的波频为基波波频，所以基波的频率即为音高。\n  每种乐器构造的特殊性使得组成一个单音的各谐波的振幅之比不同。此外，乐器本身也会产生共振。所以，不同乐器即使奏出相同音高，音色也会迥然不同。\n  直观听觉演示见好和弦Ep.46。\n  拍音    振幅相近的两个单音相互叠加产生的声波，因其周期性的振幅变化如节拍一般，故称为拍音。\n  如果两个单音频率为整数，则拍音频率为其周期最小公倍数的倒数。\n  十二平均律与五线谱 为了记录和表达不同的音高，人们发展出表示相对音高的十二平均律和表示绝对音高的五线谱系统。\n十二平均律   为了表示相对音高，引入音程的概念，即两个音之间的频率差距。\n  将频率比为1 : 2的两个音（如中央Do和高音Do）之间的音程定义为纯八度。 把纯八度音程按频率十二等分，即得到频率呈等比增长的十三个音。为了便于表示，将相邻音之间的音程记为0.5个音数，并对不同的音数所对应的音程名分别做了定义，如下表：\n     音数 音程 音数 音程     0.5 小二度 3.5 纯五度   1 大二度 4 小六度   1.5 小三度 4.5 大六度   2 大三度 5 小七度   2.5 纯四度 5.5 大七度   3 三全音 6 纯八度     实际上，每个音程也可以有其他叫法，如小三度又可称为增二度，大六度可称为减七度。 为了便于描述，将音数为0.5的音程称为半音，音数为1的音程称为全音。  五线谱   快速了解五线谱相关符号可参考好和弦Ep.153\n  五线谱中的每一个音符都表示着绝对的音高。规定高音谱第二间的La为基准音，频率为440Hz。\n  高音谱的下加一线就是低音谱的上加一线，这条线上的音就是中央C，即C4。像一个字母加一个数字这样的表示方法称为科学记音法，基准音为A4。\n  和声   和声指由超过一个单音组合成的声音。\n  为什么我们会觉得相距纯五度的两个音的和声比相距小二度的和声好听：按两个音的频率比转化成近似整数比的最小公倍数排序，可得以下和声序列：\n  -比如，C4和G4是纯五度关系，和声频率是C4频率的两倍。所以，在C4和G4的基础上再加入C3，有增强效果。\n历史变革：从五度相生律到十二平均律   人们很早就发现，一根长为 l 的弦发出的声音同1/2 l ，2/3 l ，3/4 l 的弦发出的声音很协调。于是，以 2/3 l 为基础生成的5个音，加上 3/4 l 和 l 自身而组成的7个音（具体生成方式可见维基百科），因为从 l 对应的 f 到 2/3 l 对应的 3/2 f 是纯五度关系， 被称为五度相生律。\n  五度相生律的7个音与理想的等比曲线仍然存在一定误差，尤其是第3个音和第7个音。随着数学的发展，人们发现3/2的12次幂约为128，即基准频率上的第7个八度音。于是，使用11个3/2倍数的频率，在归一化后组成了12音阶。而且新产生的音都被“均匀”地安插在了原先的7音阶中间。这种分割法被称为纯律。由于E和F、B和C之间没有插入新的音，所以这些音之间是半音。\n  然而，纯律的音之间仍旧不是完美的等比关系，这就造成了转调（如整体降半音）时的不协调。所以，公元17世纪明朝人朱载堉提出十二平均律，解决了转调问题的同时。（不过也在一定程度上破坏了纯四度和纯五度的协调关系）\n  和弦   基础知识见好和弦Ep.2\n  大和弦：大三度、纯五度\n小和弦：小三度、纯五度\n增和弦：大三度、增五度\n减和弦：小三度、减五度\n  调式   调式：具有某种特定音程关系的若干个音的集合。这些音在调式中担任着不同的角色（见好和弦Ep.5-6）\n  每种调式都有7个不同的音，称为：主音、上主音、中音、下属音、属音、下中音和下主音（导音）。也可称为Ⅰ级至Ⅶ级。不同的调式规定了这些音之间不同的音程。\n  常用调式分为大调和小调，最重要的是自然大调和自然小调，分别为“全全半全全全半”和“全半全全半全全”，典型音阶分别为和 。以主音为根音的三和弦称为主和弦，大调为大三和弦，小调为小三和弦。\n  绝对音名相同，但相位不同的大小调称为关系调，如降E大调和c小调。\n  调性   设定了主音的音阶序列（调式）就称为调性。\n  对于大调式来说，12个主音中有7个不带升降号，命名唯一，而其余5个则可能有两个名字。为了统一，规定C、G、D、A、E、B、F#为主音的调性用升号标记五线谱的升降，其它调性用降号b标记五线谱的升降。\n  音程表与五度圈详见原文\n  ",
+  "wordCount" : "117",
+  "inLanguage": "en",
+  "datePublished": "2022-03-01T19:27:11+08:00",
+  "dateModified": "2022-03-01T19:27:11+08:00",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://damido31.github.io/loomfactory/posts/musictheory/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "loomfactory",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://damido31.github.io/loomfactory/favicon.ico"
+    }
+  }
+}
+</script>
+</head>
+
+<body class="" id="top">
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    } else if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.body.classList.add('dark');
+    }
+
+</script>
+
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="https://damido31.github.io/loomfactory/" accesskey="h" title="loomfactory (Alt + H)">loomfactory</a>
+            <span class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </span>
+        </div>
+        <ul id="menu">
+        </ul>
+    </nav>
+</header>
+<main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    
+    <h1 class="post-title">
+      《写给理工科人看的乐理》笔记
+    </h1>
+    <div class="post-meta"><span title='2022-03-01 19:27:11 +0800 CST'>March 1, 2022</span>
+
+</div>
+  </header> 
+  <div class="post-content"><p>本篇为知乎上<a href="https://zhuanlan.zhihu.com/p/395134247">写给理工科人看的乐理</a>（作者：Devymex Wang）的学习笔记。</p>
+<h2 id="声学基础">声学基础<a hidden class="anchor" aria-hidden="true" href="#声学基础">#</a></h2>
+<h3 id="音乐">音乐<a hidden class="anchor" aria-hidden="true" href="#音乐">#</a></h3>
+<p>声音以某种规律进行音高（频率）和音量（振幅）的变化。</p>
+<h3 id="纯音">纯音<a hidden class="anchor" aria-hidden="true" href="#纯音">#</a></h3>
+<ul>
+<li>以某个固定频率简谐振动产生的声波称为<strong>纯音</strong>。</li>
+<li>自然界不存在绝对的纯音。电声设备或音叉可以发出接近纯音的声波。</li>
+</ul>
+<h3 id="复合音">复合音<a hidden class="anchor" aria-hidden="true" href="#复合音">#</a></h3>
+<ol>
+<li>谐波叠加</li>
+</ol>
+<ul>
+<li>
+<p>对于一组频率成倍数的正弦波来说，频率最低的波称为<strong>基波</strong>，其余波为<strong>谐波</strong>，根据频率倍数细分为二次谐波、三次谐波等。音乐中谐波往往被称为<strong>泛音</strong>。</p>
+</li>
+<li>
+<p>基波与谐波叠加而成的音波称为<strong>单音</strong>，特指单一乐器演奏独立的一个音发出的声波。该声波的频率称为<strong>音高</strong>，而又因为谐波叠加后的波频为基波波频，所以基波的频率即为音高。</p>
+</li>
+<li>
+<p>每种乐器构造的特殊性使得组成一个单音的<strong>各谐波的振幅之比</strong>不同。此外，乐器本身也会产生共振。所以，不同乐器即使奏出相同音高，音色也会迥然不同。</p>
+</li>
+<li>
+<p>直观听觉演示见<a href="https://www.bilibili.com/video/BV1Xs411374a?p=46">好和弦Ep.46</a>。</p>
+</li>
+</ul>
+<ol start="2">
+<li>拍音</li>
+</ol>
+<ul>
+<li>
+<p><strong>振幅</strong>相近的两个单音相互叠加产生的声波，因其周期性的振幅变化如节拍一般，故称为<strong>拍音</strong>。</p>
+</li>
+<li>
+<p>如果两个单音频率为整数，则拍音频率为其周期最小公倍数的倒数。</p>
+</li>
+</ul>
+<h2 id="十二平均律与五线谱">十二平均律与五线谱<a hidden class="anchor" aria-hidden="true" href="#十二平均律与五线谱">#</a></h2>
+<p>为了记录和表达不同的音高，人们发展出表示<strong>相对音高</strong>的十二平均律和表示<strong>绝对音高</strong>的五线谱系统。</p>
+<h3 id="十二平均律">十二平均律<a hidden class="anchor" aria-hidden="true" href="#十二平均律">#</a></h3>
+<ul>
+<li>
+<p>为了表示相对音高，引入<strong>音程</strong>的概念，即两个音之间的频率差距。</p>
+</li>
+<li>
+<p>将频率比为1 : 2的两个音（如中央Do和高音Do）之间的音程定义为<strong>纯八度</strong>。 把纯八度音程按频率十二等分，即得到频率呈等比增长的十三个音。为了便于表示，将相邻音之间的音程记为0.5个<strong>音数</strong>，并对不同的音数所对应的音程名分别做了定义，如下表：</p>
+</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>音数</th>
+<th>音程</th>
+<th>音数</th>
+<th>音程</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0.5</td>
+<td>小二度</td>
+<td>3.5</td>
+<td>纯五度</td>
+</tr>
+<tr>
+<td>1</td>
+<td>大二度</td>
+<td>4</td>
+<td>小六度</td>
+</tr>
+<tr>
+<td>1.5</td>
+<td>小三度</td>
+<td>4.5</td>
+<td>大六度</td>
+</tr>
+<tr>
+<td>2</td>
+<td>大三度</td>
+<td>5</td>
+<td>小七度</td>
+</tr>
+<tr>
+<td>2.5</td>
+<td>纯四度</td>
+<td>5.5</td>
+<td>大七度</td>
+</tr>
+<tr>
+<td>3</td>
+<td>三全音</td>
+<td>6</td>
+<td>纯八度</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>实际上，每个音程也可以有其他叫法，如小三度又可称为增二度，大六度可称为减七度。</li>
+<li>为了便于描述，将音数为0.5的音程称为半音，音数为1的音程称为全音。</li>
+</ul>
+<h3 id="五线谱">五线谱<a hidden class="anchor" aria-hidden="true" href="#五线谱">#</a></h3>
+<ul>
+<li>
+<p>快速了解五线谱相关符号可参考<a href="https://www.bilibili.com/video/BV1Xs411374a?p=153">好和弦Ep.153</a></p>
+</li>
+<li>
+<p>五线谱中的每一个<strong>音符</strong>都表示着绝对的音高。规定高音谱第二间的La为<strong>基准音</strong>，频率为440Hz。</p>
+</li>
+<li>
+<p>高音谱的下加一线就是低音谱的上加一线，这条线上的音就是中央C，即C4。像一个字母加一个数字这样的表示方法称为<strong>科学记音法</strong>，基准音为A4。</p>
+</li>
+</ul>
+<h3 id="和声">和声<a hidden class="anchor" aria-hidden="true" href="#和声">#</a></h3>
+<ul>
+<li>
+<p><strong>和声</strong>指由超过一个单音组合成的声音。</p>
+</li>
+<li>
+<p>为什么我们会觉得相距纯五度的两个音的和声比相距小二度的和声好听：按两个音的频率比转化成近似整数比的最小公倍数排序，可得以下和声序列：&lt;纯八度（2），纯五度（6），纯四度（12），大六度，大三度，小三度，小六度，小七度，三全音，大二度，大七度，小二度&gt;</p>
+</li>
+</ul>
+<p>-比如，C4和G4是纯五度关系，和声频率是C4频率的两倍。所以，在C4和G4的基础上再加入C3，有增强效果。</p>
+<h3 id="历史变革从五度相生律到十二平均律">历史变革：从五度相生律到十二平均律<a hidden class="anchor" aria-hidden="true" href="#历史变革从五度相生律到十二平均律">#</a></h3>
+<ul>
+<li>
+<p>人们很早就发现，一根长为 <em>l</em> 的弦发出的声音同1/2 <em>l</em> ，2/3 <em>l</em> ，3/4 <em>l</em> 的弦发出的声音很协调。于是，以 2/3 <em>l</em> 为基础生成的5个音，加上 3/4 <em>l</em> 和 <em>l</em> 自身而组成的7个音（具体生成方式可见<a href="https://zh.wikipedia.org/wiki/%E4%BA%94%E5%BA%A6%E7%9B%B8%E7%94%9F%E5%BE%8B">维基百科</a>），因为从 <em>l</em> 对应的 <em>f</em> 到 2/3 <em>l</em> 对应的 3/2 <em>f</em> 是纯五度关系， 被称为<strong>五度相生律</strong>。</p>
+</li>
+<li>
+<p>五度相生律的7个音与理想的等比曲线仍然存在一定误差，尤其是第3个音和第7个音。随着数学的发展，人们发现3/2的12次幂约为128，即基准频率上的第7个八度音。于是，使用11个3/2倍数的频率，在归一化后组成了12音阶。而且新产生的音都被“均匀”地安插在了原先的7音阶中间。这种分割法被称为<strong>纯律</strong>。由于E和F、B和C之间没有插入新的音，所以这些音之间是半音。</p>
+</li>
+<li>
+<p>然而，纯律的音之间仍旧不是完美的等比关系，这就造成了<strong>转调</strong>（如整体降半音）时的不协调。所以，公元17世纪明朝人朱载堉提出十二平均律，解决了转调问题的同时。（不过也在一定程度上破坏了纯四度和纯五度的协调关系）</p>
+</li>
+</ul>
+<h3 id="和弦">和弦<a hidden class="anchor" aria-hidden="true" href="#和弦">#</a></h3>
+<ul>
+<li>
+<p>基础知识见<a href="https://www.bilibili.com/video/BV1Xs411374a?p=2">好和弦Ep.2</a></p>
+</li>
+<li>
+<p>大和弦：大三度、纯五度<br>
+小和弦：小三度、纯五度<br>
+增和弦：大三度、增五度<br>
+减和弦：小三度、减五度</p>
+</li>
+</ul>
+<h3 id="调式">调式<a hidden class="anchor" aria-hidden="true" href="#调式">#</a></h3>
+<ul>
+<li>
+<p><strong>调式</strong>：具有某种特定音程关系的若干个音的集合。这些音在调式中担任着不同的角色（见<a href="https://www.bilibili.com/video/BV1Xs411374a?p=5">好和弦Ep.5-6</a>）</p>
+</li>
+<li>
+<p>每种调式都有7个不同的音，称为：主音、上主音、中音、下属音、属音、下中音和下主音（导音）。也可称为Ⅰ级至Ⅶ级。不同的调式规定了这些音之间不同的<strong>音程</strong>。</p>
+</li>
+<li>
+<p>常用调式分为大调和小调，最重要的是<strong>自然大调</strong>和<strong>自然小调</strong>，分别为“全全半全全全半”和“全半全全半全全”，典型音阶分别为&lt;C4 D4 &hellip; C5&gt; 和 &lt;A3 B3 &hellip; A4&gt;。以主音为根音的三和弦称为<strong>主和弦</strong>，大调为大三和弦，小调为小三和弦。</p>
+</li>
+<li>
+<p>绝对音名相同，但相位不同的大小调称为<strong>关系调</strong>，如降E大调&lt;Eb、F、G、Ab、Bb、C、D&gt;和c小调&lt;C、D、Eb、F、G、Ab、Bb&gt;。</p>
+</li>
+</ul>
+<h3 id="调性">调性<a hidden class="anchor" aria-hidden="true" href="#调性">#</a></h3>
+<ul>
+<li>
+<p>设定了主音的音阶序列（调式）就称为<strong>调性</strong>。</p>
+</li>
+<li>
+<p>对于大调式来说，12个主音中有7个不带升降号，命名唯一，而其余5个则可能有两个名字。为了统一，规定C、G、D、A、E、B、F#为主音的调性用升号标记五线谱的升降，其它调性用降号b标记五线谱的升降。</p>
+</li>
+<li>
+<p><a href="https://zhuanlan.zhihu.com/p/395146872">音程表与五度圈详见原文</a></p>
+</li>
+</ul>
+
+
+  </div>
+
+  <footer class="post-footer">
+  </footer>
+</article>
+    </main>
+    
+<footer class="footer">
+    <span>&copy; 2022 <a href="https://damido31.github.io/loomfactory/">loomfactory</a></span>
+    <span>
+        Powered by
+        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
+        <a href="https://git.io/hugopapermod" rel="noopener" target="_blank">PaperMod</a>
+    </span>
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+</body>
+
+</html>
